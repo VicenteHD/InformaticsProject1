@@ -1,0 +1,54 @@
+#game {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#board-container {
+    display: flex;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.square {
+    border: 2px solid;
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 50px;
+    background: #CFCFCF;
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #CFCFCF 0%, #91CFCB 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #CFCFCF 0%, #91CFCB 100%);
+    background: radial-gradient(circle farthest-corner at center center, #CFCFCF 0%, #91CFCB 100%);
+    display: flex;
+    border-radius: 20px;
+}
+
+body {background-color: mediumpurple;}
+
+/* uncomment this and see effect by moving mouse over square or touching square on a phone */
+
+.square:hover {
+    background-color: rgb(255 0 0);
+}
+
+
+/* uncomment these to see effect - visit on phone more likely than browser */
+ 
+.keyboard-row {
+  display: flex;
+  width: 75%;
+}
+
+
+.keyboard-row button {
+  flex-grow: 1;
+}
+
